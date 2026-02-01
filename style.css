@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  padding: 30px;
+  background: #f4f4f4;
+}
+
+form {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+  max-width: 340px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, button {
+  padding: 10px;
+}
+
+#previewBox {
+  margin-top: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#preview svg {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+.btnRow {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Crop modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  max-width: 420px;
+  border-radius: 10px;
+}
+
+.modal-content img {
+  max-width: 100%;
+}
+
+.crop-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
