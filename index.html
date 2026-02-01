@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SVG Dynamic Generator + Crop</title>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>SVG Dynamic Generator</h2>
+
+<input type="file" id="svgUpload" accept=".svg">
+
+<form id="dynamicForm"></form>
+
+<div id="previewBox">
+  <h3>Preview</h3>
+  <div id="preview"></div>
+</div>
+
+<div class="btnRow">
+  <button id="downloadPNG">Download PNG</button>
+  <button id="downloadPDF">Download PDF</button>
+</div>
+
+<!-- Crop Modal -->
+<div id="cropModal" class="modal">
+  <div class="modal-content">
+    <img id="cropImage">
+    <div class="crop-actions">
+      <button id="cropConfirm">Crop</button>
+      <button onclick="closeCrop()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
